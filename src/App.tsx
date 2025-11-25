@@ -25,6 +25,8 @@ const parseTime = (time: string) => {
 
 const formatDay = (day: string) => day.replace('DIA', 'Dia')
 
+const logoPath = `${import.meta.env.BASE_URL}unifametro.png`
+
 function App() {
   const sessions = schedule as Session[]
   const days = useMemo(
@@ -100,7 +102,7 @@ function App() {
       <header className="hero">
         <div className="brand">
           <img
-            src="/unifametro.png"
+            src={logoPath}
             alt="Logo Unifametro"
             className="brand__logo"
           />
