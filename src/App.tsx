@@ -23,7 +23,20 @@ const parseTime = (time: string) => {
   return hours * 60 + (minutes || 0)
 }
 
-const formatDay = (day: string) => day.replace('DIA', 'Dia')
+const formatDay = (day: string) => {
+  const smallWords = new Set(['de', 'do', 'da', 'das', 'dos'])
+
+  return day
+    .toLowerCase()
+    .split(' ')
+    .filter(Boolean)
+    .map((word, index) =>
+      index > 0 && smallWords.has(word)
+        ? word
+        : word.charAt(0).toUpperCase() + word.slice(1)
+    )
+    .join(' ')
+}
 
 const logoPath = `${import.meta.env.BASE_URL}unifametro.png`
 

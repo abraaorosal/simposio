@@ -23,4 +23,4 @@ npm run build
 
 ## Dados
 
-Os 428 itens extraídos da planilha estão em `src/data/schedule.json`. O logo usado fica em `public/unifametro.png`.
+Os 434 itens extraídos da planilha estão em `src/data/schedule.json`. O logo usado fica em `public/unifametro.png`.
