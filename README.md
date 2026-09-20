@@ -1,26 +1,51 @@
-# Calendário do II Simpósio de Extensão Curricular
+# Academic Symposium Schedule — Interactive Web Application
 
-Aplicação React + TypeScript que transforma a planilha do simpósio em uma visualização web interativa com filtros por dia, período, sala e busca por título. A identidade visual usa o logo e as cores da Unifametro.
+React/TypeScript application that transforms symposium schedule data into a searchable, filterable web experience.
 
-## Rodar localmente
+The project was developed to replace static timetable consultation with a more accessible interface for students, faculty and event participants.
+
+## Core capabilities
+
+- filter presentations by day;
+- filter by period and room;
+- search by presentation title;
+- responsive event schedule;
+- centralized event data;
+- automatic GitHub Pages deployment workflow.
+
+## Technology stack
+
+- React 19
+- TypeScript
+- Vite
+- ESLint
+- GitHub Actions / GitHub Pages
+
+## Running locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+Production build:
 
 ```bash
 npm run build
 ```
 
-## Deploy automático (GitHub Pages)
+## Engineering value
 
-- Push na branch `main` dispara o workflow `.github/workflows/deploy.yml`.
-- O Vite está configurado com `base: '/simposio/'` para funcionar no GitHub Pages.
-- O workflow faz build e publica em `gh-pages`. Depois do primeiro deploy, ative o GitHub Pages apontando para a branch `gh-pages` nas configurações do repositório.
+The project demonstrates a recurring pattern in academic systems: converting institutional spreadsheet/schedule information into a lightweight digital product that is easier to search and maintain.
 
-## Dados
+## Publication
 
-Os 434 itens extraídos da planilha estão em `src/data/schedule.json`. O logo usado fica em `public/unifametro.png`.
+The repository includes automated deployment configuration for GitHub Pages.
+
+## Data responsibility
+
+Event schedules should be reviewed before publication to ensure participant information and dates correspond to the officially released program.
+
+---
+
+**Portfolio classification:** academic product · React · TypeScript · information retrieval · event systems
